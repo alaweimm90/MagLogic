@@ -306,7 +306,7 @@ If you use MagLogic in your research, please cite:
 ```bibtex
 @article{alawein2019multistate,
   title={Multistate nanomagnetic logic using equilateral permalloy triangles},
-  author={Alawein, Meshal and others},
+  author={Alawein, Dr. Meshal and others},
   journal={IEEE Magnetics Letters},
   volume={10},
   pages={1--5},
@@ -316,7 +316,7 @@ If you use MagLogic in your research, please cite:
 
 @software{alawein2025maglogic,
   title={MagLogic: Nanomagnetic Logic Simulation Suite},
-  author={Alawein, Meshal},
+  author={Alawein, Dr. Meshal},
   year={2025},
   version={1.0.0},
   url={https://github.com/alaweimm90/MagLogic},
@@ -331,16 +331,6 @@ If you use MagLogic in your research, please cite:
 - **Machine learning**: [Nat. Commun. 2022](https://doi.org/10.1038/s41467-XXX-XXXXX-X)
 
 ## 👨‍💼 Author & Acknowledgments
-
-**Dr. Meshal Alawein**  
-Research Scientist | Computational Physics & Materials Modeling  
-University of California, Berkeley  
-
-[![Website](https://img.shields.io/badge/Website-malawein.com-blue?style=flat&logo=google-chrome)](https://malawein.com)
-[![LinkedIn](https://img.shields.io/badge/LinkedIn-meshal--alawein-0077B5?style=flat&logo=linkedin)](https://www.linkedin.com/in/meshal-alawein)
-[![GitHub](https://img.shields.io/badge/GitHub-alaweimm90-333?style=flat&logo=github)](https://github.com/alaweimm90)
-[![SimCore](https://img.shields.io/badge/SimCore-simcore.dev-orange?style=flat&logo=data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjQiIGhlaWdodD0iMjQiIHZpZXdCb3g9IjAgMCAyNCAyNCIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48cGF0aCBkPSJNMTIgMkw0IDZWMThMMTIgMjJMMjAgMThWNkwxMiAyWiIgZmlsbD0iI0ZGNkEwMCIvPjwvc3ZnPg==)](https://simcore.dev)
-[![Google Scholar](https://img.shields.io/badge/Scholar-IB__E6GQAAAAJ-4285F4?style=flat&logo=google-scholar&logoColor=white)](https://scholar.google.com/citations?user=IB_E6GQAAAAJ&hl=en)
 
 ### Research Interests
 - Computational micromagnetism and spintronics

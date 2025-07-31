@@ -36,7 +36,7 @@ license: MIT
 license-url: "https://github.com/alaweimm90/MagLogic/blob/main/LICENSE"
 
 version: "1.0.0"
-date-released: "2024-01-15"
+date-released: "2025-01-15"
 
 references:
   - type: article
@@ -66,5 +66,5 @@ preferred-citation:
       email: "meshal@berkeley.edu"
       affiliation: "University of California, Berkeley"
   version: "1.0.0"
-  year: 2024
+  year: 2025
   url: "https://github.com/alaweimm90/MagLogic"
