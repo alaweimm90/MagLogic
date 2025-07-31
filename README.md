@@ -183,7 +183,7 @@ This project is licensed under the **MIT License** - see the [LICENSE](LICENSE) 
 <div align="center">
 
 <strong>Dr. Meshal Alawein</strong><br/>
-<em>Research Scientist | Computational Physics & Materials Modeling</em><br/>
+<em>Computational Physicist & Research Scientist</em><br/>
 University of California, Berkeley
 
 ---
