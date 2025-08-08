@@ -57,15 +57,19 @@ try:
     
     # Analysis tools
     from .analysis.magnetization import MagnetizationAnalyzer
-    from .analysis.energy_analysis import EnergyAnalyzer
-    from .logic.logic_analyzer import LogicAnalyzer
+    # TODO: Implement energy analysis module
+    # from .analysis.energy_analysis import EnergyAnalyzer
+    # TODO: Implement logic analyzer module  
+    # from .logic.logic_analyzer import LogicAnalyzer
     
     # Visualization
     from .visualization.berkeley_style import BerkeleyStyle, berkeley_style
-    from .visualization.magnetization_plots import MagnetizationPlotter
+    # TODO: Implement magnetization plotter
+    # from .visualization.magnetization_plots import MagnetizationPlotter
     
     # Configuration
-    from .utils.config import get_config, set_config
+    # TODO: Implement configuration utilities
+    # from .utils.config import get_config, set_config
     
 except ImportError as e:
     # Provide helpful error message for missing dependencies
@@ -83,11 +87,12 @@ __all__ = [
     
     # Core classes
     "OOMMFParser", "MuMax3Parser", "MagnetizationAnalyzer", 
-    "EnergyAnalyzer", "LogicAnalyzer", "BerkeleyStyle", 
-    "MagnetizationPlotter",
+    "BerkeleyStyle", 
+    # TODO: Add when implemented: "EnergyAnalyzer", "LogicAnalyzer", "MagnetizationPlotter"
     
     # Utilities
-    "get_config", "set_config", "berkeley_style",
+    "berkeley_style",
+    # TODO: Add when implemented: "get_config", "set_config"
     
     # Constants (imported from core.constants)
     "PHYSICAL_CONSTANTS", "MATERIAL_CONSTANTS",
@@ -233,9 +238,9 @@ def print_system_info():
     
     print("="*60)
 
-# Set up logging configuration
-from .utils.logging_config import setup_logging
-setup_logging()
+# TODO: Set up logging configuration when utils module is implemented
+# from .utils.logging_config import setup_logging
+# setup_logging()
 
 # Initialize Berkeley style globally
 try:
