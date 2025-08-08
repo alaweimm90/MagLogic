@@ -358,3 +358,20 @@ def magnetic_energy_scale(material: str, volume: float) -> float:
     
     E_scale = mu_0 * Ms**2 * volume / 2
     return E_scale
+
+def validate_parameter(parameter: str, value: float) -> bool:
+    """
+    Validate if a parameter value is within reasonable physical limits.
+    
+    Args:
+        parameter: Parameter name (e.g., 'Ms', 'A_ex', 'alpha')
+        value: Parameter value to validate
+        
+    Returns:
+        True if parameter is within valid range, False otherwise
+    """
+    if parameter not in PARAMETER_RANGES:
+        return True  # No validation range defined
+    
+    param_range = PARAMETER_RANGES[parameter]
+    return param_range["min"] <= value <= param_range["max"]
