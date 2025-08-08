@@ -229,6 +229,30 @@ class BaseParser(ABC):
     def _log_error(self, message: str):
         """Log error message."""
         logger.error(message)
+    
+    @staticmethod
+    def format_file_size(size_bytes: int) -> str:
+        """
+        Format file size in human-readable format.
+        
+        Args:
+            size_bytes: File size in bytes
+            
+        Returns:
+            Formatted file size string (e.g., '1.5 MB', '325 KB')
+        """
+        if size_bytes == 0:
+            return "0 B"
+        
+        size_names = ["B", "KB", "MB", "GB", "TB"]
+        i = 0
+        size = float(size_bytes)
+        
+        while size >= 1024.0 and i < len(size_names) - 1:
+            size /= 1024.0
+            i += 1
+            
+        return f"{size:.1f} {size_names[i]}"
 
 class ParseError(Exception):
     """Exception raised when file parsing fails."""
