@@ -1,6 +1,9 @@
 # MagLogic .gitignore
 # Comprehensive ignore patterns for computational magnetism research
 
+# Claude Code assistant files
+.claude/
+
 # Python
 __pycache__/
 *.py[cod]
