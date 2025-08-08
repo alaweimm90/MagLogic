@@ -19,7 +19,7 @@ from scipy.spatial.distance import cdist
 from scipy.cluster.hierarchy import linkage, fcluster
 import warnings
 
-from ..core.constants import PHYSICAL_CONSTANTS, BERKELEY_COLORS
+from ..core.constants import PHYSICAL_CONSTANTS
 from ..parsers import OOMMFParser, MuMax3Parser
 
 
