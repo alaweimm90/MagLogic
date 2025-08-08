@@ -1,6 +1,7 @@
 # MagLogic: Nanomagnetic Logic Simulation Suite
 # Python dependencies for computational magnetism analysis
 # Author: Dr. Meshal Alawein <meshal@berkeley.edu>
+# Updated: January 2025
 
 # Core scientific computing
 numpy>=1.21.0,<2.0.0          # Numerical arrays and linear algebra
