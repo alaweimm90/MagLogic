@@ -172,18 +172,20 @@ If you use MagLogic in your research, please cite:
 }
 ```
 
+---
+
 ## License
 
-This project is licensed under the **MIT License** - see the [LICENSE](LICENSE) file for details.
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
 
-[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+**Copyright © 2025 Dr. Meshal Alawein — All rights reserved.**
 
 ## Connect & Collaborate
 
 <div align="center">
 
 <strong>Dr. Meshal Alawein</strong><br/>
-<em>Research Scientist | Computational Physics & Materials Modeling</em><br/>
+<em>Computational Physicist & Research Scientist</em><br/>
 University of California, Berkeley
 
 ---
@@ -216,4 +218,5 @@ Science can be hard. This is my way of helping. ⚛️
 
 ---
 
-*Advancing the frontiers of magnetic computing through open science*
+
+*Crafted with love, 🐻 energy, and zero sleep.*
