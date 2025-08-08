@@ -142,13 +142,14 @@ setup(
     },
     
     # Entry points for command-line tools
+    # TODO: Implement command-line interface modules
     entry_points={
         'console_scripts': [
-            'maglogic=maglogic.cli:main',
-            'maglogic-convert=maglogic.scripts.convert_formats:main',
-            'maglogic-analyze=maglogic.scripts.batch_analysis:main',
-            'maglogic-gui=maglogic.gui.maglogic_dashboard:main',
-            'maglogic-benchmark=maglogic.scripts.benchmark_performance:main',
+            # 'maglogic=maglogic.cli:main',
+            # 'maglogic-convert=maglogic.scripts.convert_formats:main',
+            # 'maglogic-analyze=maglogic.scripts.batch_analysis:main',
+            # 'maglogic-gui=maglogic.gui.maglogic_dashboard:main',
+            # 'maglogic-benchmark=maglogic.scripts.benchmark_performance:main',
         ],
     },
     
