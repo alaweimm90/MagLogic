@@ -1,9 +1,8 @@
 """
-NAND/NOR Logic Gate Demonstration for MagLogic.
+NAND/NOR logic gate demo using triangular nanomagnets.
 
-This module provides a complete demonstration of reconfigurable NAND/NOR 
-logic gates using triangular nanomagnetic elements, showcasing the core
-functionality of the MagLogic simulation suite.
+Implements reconfigurable gates from Alawein et al. (2019) with
+OOMMF simulation backend.
 
 Author: Dr. Meshal Alawein
 Email: meshal@berkeley.edu
@@ -27,11 +26,10 @@ logger = logging.getLogger(__name__)
 
 class NANDNORDemo:
     """
-    Complete demonstration of NAND/NOR reconfigurable logic gates.
+    Triangular nanomagnet logic gate demo.
     
-    This class implements a comprehensive demonstration of triangular
-    nanomagnetic logic elements that can be reconfigured between NAND
-    and NOR operations by changing the clock field angle.
+    Switches between NAND and NOR by rotating clock field.
+    Tests all input combinations and measures performance.
     
     Example:
         >>> demo = NANDNORDemo()
@@ -95,10 +93,10 @@ class NANDNORDemo:
     
     def run_complete_demo(self) -> Dict[str, Any]:
         """
-        Run the complete NAND/NOR logic gate demonstration.
+        Run full NAND/NOR gate test sequence.
         
         Returns:
-            Complete demonstration results
+            Dict with gate results, timing, and visualizations
         """
         logger.info("Starting complete NAND/NOR logic gate demonstration")
         
@@ -1050,13 +1048,13 @@ clock field angle.
 # Utility function for running the demo
 def run_nand_nor_demo(output_dir: Optional[str] = None) -> Dict[str, Any]:
     """
-    Convenience function to run the complete NAND/NOR demonstration.
+    Run NAND/NOR gate demonstration.
     
     Args:
-        output_dir: Directory for saving results
+        output_dir: Output directory for results
         
     Returns:
-        Complete demonstration results
+        Demo results dict
     """
     demo = NANDNORDemo(output_dir)
     return demo.run_complete_demo()
