@@ -1,8 +1,8 @@
 """
-Base parser class for micromagnetic simulation data.
+Base parser for OOMMF/MuMax3 simulation files.
 
-This module provides the abstract base class for all file parsers in MagLogic,
-ensuring consistent interfaces and error handling across different file formats.
+Defines common interface for parsing OVF files and tabulated data
+from different micromagnetic simulators.
 
 Author: Dr. Meshal Alawein
 Email: meshal@berkeley.edu
@@ -19,15 +19,14 @@ logger = logging.getLogger(__name__)
 
 class BaseParser(ABC):
     """
-    Abstract base class for micromagnetic simulation file parsers.
+    Base class for simulation file parsers.
     
-    This class defines the common interface that all parsers must implement,
-    providing consistent error handling and data structures across different
-    file formats (OOMMF, MuMax3, etc.).
+    Defines interface for parsing OOMMF (.ovf, .odt) and MuMax3 (.ovf, .txt)
+    files with consistent data structures.
     
     Attributes:
-        verbose: Whether to print verbose output during parsing
-        supported_extensions: List of file extensions this parser supports
+        verbose: Print parsing details if True
+        supported_extensions: File extensions this parser handles
     """
     
     def __init__(self, verbose: bool = False):
@@ -51,23 +50,19 @@ class BaseParser(ABC):
     @abstractmethod
     def parse_file(self, filepath: Union[str, Path]) -> Dict[str, Any]:
         """
-        Parse a simulation data file.
+        Parse simulation file.
         
         Args:
-            filepath: Path to the file to parse
+            filepath: Path to simulation file
             
         Returns:
-            Dictionary containing parsed data with standardized keys:
-            - 'magnetization': Magnetization data (if applicable)
-            - 'coordinates': Spatial coordinates
-            - 'time_series': Time-dependent data (if applicable)
-            - 'metadata': File and simulation metadata
-            - 'header': Original file header information
+            Dict with 'magnetization', 'coordinates', 'time_series', 
+            'metadata', and 'header' keys.
             
         Raises:
-            FileNotFoundError: If the file doesn't exist
-            ValueError: If the file format is invalid
-            RuntimeError: If parsing fails
+            FileNotFoundError: File doesn't exist
+            ValueError: Invalid file format
+            RuntimeError: Parsing failed
         """
         pass
     
@@ -109,17 +104,13 @@ class BaseParser(ABC):
     
     def get_file_info(self, filepath: Union[str, Path]) -> Dict[str, Any]:
         """
-        Get basic information about a file without fully parsing it.
+        Get file metadata without parsing contents.
         
         Args:
-            filepath: Path to the file
+            filepath: Path to file
             
         Returns:
-            Dictionary with file information:
-            - 'size': File size in bytes
-            - 'extension': File extension
-            - 'exists': Whether file exists
-            - 'readable': Whether file can be read
+            Dict with size, extension, exists, readable fields
         """
         filepath = Path(filepath)
         

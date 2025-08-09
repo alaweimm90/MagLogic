@@ -1,9 +1,7 @@
 """
-Magnetization analysis tools for MagLogic.
+Analysis tools for magnetization data from OOMMF/MuMax3 simulations.
 
-This module provides comprehensive analysis capabilities for magnetization data
-from micromagnetic simulations, including spatial analysis, domain detection,
-and energy calculations.
+Includes domain detection, energy calculations, and topological analysis.
 
 Author: Dr. Meshal Alawein
 Email: meshal@berkeley.edu
@@ -25,10 +23,10 @@ from ..parsers import OOMMFParser, MuMax3Parser
 
 class MagnetizationAnalyzer:
     """
-    Comprehensive magnetization analysis toolkit.
+    Analyzes magnetization data from OVF files.
     
-    Provides methods for analyzing magnetization patterns, domain structures,
-    energy landscapes, and dynamic behavior from micromagnetic simulations.
+    Detects domains, calculates energies, and finds topological features
+    like vortices and skyrmions.
     
     Example:
         >>> analyzer = MagnetizationAnalyzer()
@@ -59,17 +57,14 @@ class MagnetizationAnalyzer:
     
     def analyze_ovf_file(self, filepath: Union[str, Path]) -> Dict[str, Any]:
         """
-        Comprehensive analysis of an OVF magnetization file.
+        Analyze OVF magnetization file.
         
         Args:
             filepath: Path to OVF file
             
         Returns:
-            Analysis results dictionary containing:
-            - domain_analysis: Domain structure information
-            - energy_analysis: Energy density calculations
-            - spatial_analysis: Spatial statistics
-            - topological_analysis: Topological features
+            Dict with domain_analysis, energy_analysis, spatial_analysis,
+            and topological_analysis results.
         """
         # Parse magnetization data
         data = self.oommf_parser.parse_ovf(filepath)
@@ -92,14 +87,14 @@ class MagnetizationAnalyzer:
     def analyze_domains(self, magnetization: Dict[str, np.ndarray], 
                        coordinates: Dict[str, np.ndarray]) -> Dict[str, Any]:
         """
-        Analyze magnetic domain structure.
+        Find magnetic domains via clustering of magnetization directions.
         
         Args:
-            magnetization: Magnetization data dictionary
-            coordinates: Coordinate arrays
+            magnetization: Magnetization data (mx, my, mz, theta, phi)
+            coordinates: Spatial coordinate arrays
             
         Returns:
-            Domain analysis results
+            Dict with num_domains, domain_labels, domain_walls, statistics
         """
         mx, my, mz = magnetization['mx'], magnetization['my'], magnetization['mz']
         
@@ -130,14 +125,14 @@ class MagnetizationAnalyzer:
     def calculate_energy_densities(self, magnetization: Dict[str, np.ndarray],
                                  coordinates: Dict[str, np.ndarray]) -> Dict[str, Any]:
         """
-        Calculate various energy density contributions.
+        Calculate exchange, demagnetization, and anisotropy energies.
         
         Args:
-            magnetization: Magnetization data dictionary
-            coordinates: Coordinate arrays
+            magnetization: Magnetization components (mx, my, mz)
+            coordinates: Spatial coordinates for gradient calculation
             
         Returns:
-            Energy density analysis
+            Dict with energy densities and totals for each contribution
         """
         mx, my, mz = magnetization['mx'], magnetization['my'], magnetization['mz']
         
@@ -274,7 +269,7 @@ class MagnetizationAnalyzer:
     
     def _detect_domains(self, theta: np.ndarray, phi: np.ndarray, 
                        min_domain_size: int = 100) -> np.ndarray:
-        """Detect magnetic domains using clustering."""
+        """Cluster similar magnetization directions into domains."""
         # Flatten arrays for clustering
         theta_flat = theta.flatten()
         phi_flat = phi.flatten()
