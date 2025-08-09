@@ -6,17 +6,13 @@
 [![Python 3.8+](https://img.shields.io/badge/python-3.8+-blue.svg)](https://www.python.org/downloads/)
 [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.XXXXXXX.svg)](https://doi.org/10.5281/zenodo.XXXXXXX)
 
-*A comprehensive cross-platform computational magnetism framework for nanomagnetic logic device simulation and analysis — implemented in Python with OOMMF and MuMax3 integration.*
+Python tools for simulating nanomagnetic logic devices. Supports OOMMF and MuMax3 backends.
 
-**Core subject areas covered (fully implemented):**
-
-- **Computational Magnetism**, Micromagnetic Simulations, Landau-Lifshitz-Gilbert Dynamics
-- **Nanomagnetic Logic**, Reconfigurable Logic Gates, Cellular Automata
-- **Spintronics**, Spin-Transfer Torque, Spin-Orbit Torque, Magnetization Dynamics
-- **Materials Science**, Magnetic Materials Modeling, Shape Anisotropy, Exchange Interactions
-- **High-Performance Computing**, GPU Acceleration, Parallel Computing, Docker Containerization
-- **Machine Learning**, AI-Powered State Classification, Parameter Optimization
-- **Scientific Visualization**, Publication-Ready Figures, UC Berkeley Styling
+**Features:**
+- Micromagnetic simulations via OOMMF and MuMax3
+- Reconfigurable logic gate analysis
+- Magnetization pattern analysis
+- Cross-platform Docker support
 
 **Author**: Dr. Meshal Alawein (meshal@berkeley.edu)
 **Institution**: University of California, Berkeley
@@ -26,9 +22,7 @@
 
 ## Project Overview
 
-MagLogic reproduces and extends the work from Alawein et al. (IEEE Magnetics Letters, 2019) on multistate nanomagnetic logic using triangular elements. This framework provides comprehensive tools for simulating reconfigurable logic gates, six-state cellular automata, and advanced magnetization analysis with dual-simulator support for both CPU-based OOMMF and GPU-accelerated MuMax3 implementations.
-
-**Core mission**: Enable cutting-edge research in ultra-low power computing paradigms through accessible, validated, and reproducible micromagnetic simulations.
+Implements nanomagnetic logic simulations from Alawein et al. (IEEE Mag. Letters, 2019). Works with both OOMMF (CPU) and MuMax3 (GPU) for triangular element logic gates and cellular automata.
 
 ## Quick Start
 
@@ -64,25 +58,19 @@ truth_table = demo_nand_nor.generate_truth_table()
 
 ## Scientific Modules
 
-### Core Simulation Engines
-- **OOMMF Integration** - Complete CPU-based micromagnetic solver with .mif scripting
-- **MuMax3 Integration** - GPU-accelerated simulations with CUDA optimization
-- **Cross-Validation** - Systematic comparison and verification between solvers
+### Simulation backends
+- OOMMF integration with .mif scripting
+- MuMax3 GPU acceleration
 
-### Logic Gate Implementations
-- **Type-I Gates** - Reconfigurable NAND/NOR switching with clock field control
-- **Type-II Gates** - Three-input majority-vote OR/AND functionality
-- **Truth Table Generation** - Automated logic verification with statistical analysis
+### Logic gates
+- Type-I: NAND/NOR with clock control
+- Type-II: Three-input majority gates
+- Automated truth table verification
 
-### Cellular Automata
-- **Six-State CA** - Triangular grid implementations with configurable evolution rules
-- **Rule Analysis** - Comprehensive characterization of stable and chaotic behaviors
-- **Thermal Effects** - Temperature-dependent switching and noise modeling
-
-### Advanced Physics
-- **STT/SOT Mechanisms** - Spin-transfer and spin-orbit torque implementations
-- **DMI Interactions** - Dzyaloshinskii-Moriya interaction modeling for chiral textures
-- **VCMA Control** - Voltage-controlled magnetic anisotropy for low-power operation
+### Analysis tools
+- Domain structure analysis
+- Energy landscape calculation
+- Topological feature detection
 
 ## Performance Benchmarks
 
@@ -92,14 +80,16 @@ truth_table = demo_nand_nor.generate_truth_table()
 | GPU (RTX 3080) | N/A | 3 min | 15.0× |
 | Cluster (64 cores) | 8 min | 2 min | 22.5× |
 
-**Scalability**: Tested up to 1000×1000 element arrays with >10⁶ time steps
+Scales to 1000×1000 element arrays with 10⁶+ timesteps
 
-## Testing & Validation
+## Testing
 
-- **Unit Tests**: Complete coverage for all parsers and analysis functions
-- **Integration Tests**: Cross-validation between OOMMF and MuMax3 results
-- **Experimental Validation**: Comparison with published peer-reviewed data
-- **Continuous Integration**: Automated testing across Python 3.8-3.12 and multiple OS
+Run the full test suite:
+```bash
+pytest --cov=maglogic --cov-report=html
+```
+
+Includes unit tests, OOMMF/MuMax3 cross-validation, and CI across Python 3.8-3.12.
 
 ```bash
 # Run test suite
@@ -108,22 +98,16 @@ pytest --cov=maglogic --cov-report=html
 
 ## Documentation
 
-Complete documentation with theory background, tutorials, and API references:
-
+Build docs locally:
 ```bash
-# Build documentation locally
 cd docs && sphinx-build -b html . _build/html
-
-# Or access online
-open https://alaweimm90.github.io/MagLogic/
 ```
 
-## Educational Examples
+Online docs: https://alaweimm90.github.io/MagLogic/
 
-- **Jupyter Notebooks** - Interactive tutorials from basic concepts to advanced techniques
-- **Workshop Materials** - Teaching resources for computational magnetism courses
-- **Video Tutorials** - Step-by-step simulation walkthroughs
-- **Real-World Applications** - Published research reproduction examples
+## Examples
+
+See `examples/` for Jupyter notebooks and demo scripts. Includes tutorials from basic simulations to advanced analysis techniques.
 
 ## Development
 
@@ -141,11 +125,7 @@ pre-commit install
 pytest --cov=maglogic --cov-report=html
 ```
 
-### Development Guidelines
-- Follow Black formatting and type hints
-- Add tests for new functionality (>90% coverage required)
-- Update documentation and examples
-- Ensure cross-platform compatibility
+Use Black formatting, add tests for new code, update docs as needed.
 
 ## Citation
 
@@ -182,41 +162,8 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 
 ## Connect & Collaborate
 
-<div align="center">
+## Contact
 
-<strong>Dr. Meshal Alawein</strong><br/>
-<em>Computational Physicist & Research Scientist</em><br/>
-University of California, Berkeley
-
----
-
-📧 <a href="mailto:meshal@berkeley.edu" style="color:#003262;">meshal@berkeley.edu</a>
-
-<a href="https://www.linkedin.com/in/meshal-alawein" title="LinkedIn">
-  <img src="https://img.shields.io/badge/LinkedIn-0077B5?style=flat&logo=linkedin&logoColor=white" alt="LinkedIn" height="32" />
-</a>
-<a href="https://github.com/alaweimm90" title="GitHub">
-  <img src="https://img.shields.io/badge/GitHub-181717?style=flat&logo=github&logoColor=white" alt="GitHub" height="32" />
-</a>
-<a href="https://malawein.com" title="Website">
-  <img src="https://img.shields.io/badge/Website-003262?style=flat&logo=googlechrome&logoColor=white" alt="Website" height="32" />
-</a>
-<a href="https://scholar.google.com/citations?user=IB_E6GQAAAAJ&hl=en" title="Google Scholar">
-  <img src="https://img.shields.io/badge/Scholar-4285F4?style=flat&logo=googlescholar&logoColor=white" alt="Scholar" height="32" />
-</a>
-<a href="https://simcore.dev" title="SimCore">
-  <img src="https://img.shields.io/badge/SimCore-FDB515?style=flat&logo=atom&logoColor=white" alt="SimCore" height="32" />
-</a>
-
-</div>
-
-<p align="center"><em>
-Made with love, and a deep respect for the struggle.<br/>
-For those still learning—from someone who still is.<br/>
-Science can be hard. This is my way of helping. ⚛️
-</em></p>
-
----
-
-
-*Crafted with love, 🐻 energy, and zero sleep.*
+**Dr. Meshal Alawein**  
+University of California, Berkeley  
+meshal@berkeley.edu
