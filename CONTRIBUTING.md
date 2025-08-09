@@ -1,6 +1,6 @@
 # Contributing to MagLogic
 
-Thank you for your interest in contributing to MagLogic! This document provides guidelines and information for contributors to the nanomagnetic logic simulation suite.
+Guidelines for contributing to MagLogic.
 
 ## Table of Contents
 - [Code of Conduct](#code-of-conduct)
@@ -15,13 +15,7 @@ Thank you for your interest in contributing to MagLogic! This document provides 
 
 ## Code of Conduct
 
-This project is committed to providing a welcoming and inclusive environment for all contributors. By participating, you agree to abide by our code of conduct:
-
-- Be respectful and inclusive in all interactions
-- Focus on constructive feedback and solutions
-- Respect differing viewpoints and experiences
-- Show empathy towards other community members
-- Use welcoming and inclusive language
+Be respectful in discussions. Focus on constructive feedback. Help others learn.
 
 ## Getting Started
 
@@ -31,13 +25,11 @@ This project is committed to providing a welcoming and inclusive environment for
 - Basic understanding of micromagnetism and computational physics
 - Familiarity with OOMMF and/or MuMax3 (helpful but not required)
 
-### Ways to Contribute
-- **Bug Reports**: Help identify and report issues
-- **Feature Requests**: Suggest new capabilities or improvements  
-- **Code Contributions**: Implement new features or fix bugs
-- **Documentation**: Improve or expand documentation
-- **Testing**: Add test cases or improve test coverage
-- **Examples**: Create tutorials and usage examples
+### Ways to help
+- Report bugs and suggest features
+- Submit code fixes and new functionality  
+- Improve documentation and examples
+- Add test cases
 
 ## Development Setup
 
@@ -83,24 +75,16 @@ flake8 maglogic/
 
 ## Contributing Guidelines
 
-### Issue Reports
-When reporting bugs or requesting features:
+### Bug reports
+Search existing issues first. Include:
+- MagLogic version
+- Python version and OS  
+- Steps to reproduce
+- Expected vs actual behavior
+- Error messages
 
-1. **Search existing issues** to avoid duplicates
-2. **Use issue templates** when available
-3. **Provide detailed information**:
-   - MagLogic version
-   - Python version and OS
-   - Steps to reproduce (for bugs)
-   - Expected vs actual behavior
-   - Relevant code snippets or error messages
-
-### Feature Requests
-For new features:
-- Explain the use case and benefit
-- Consider backwards compatibility
-- Suggest implementation approach if possible
-- Be open to discussion and alternative solutions
+### Feature requests
+Explain the use case and benefit. Consider backwards compatibility.
 
 ## Pull Request Process
 
@@ -380,11 +364,7 @@ sphinx-autobuild . _build/html --port 8080
 - Ask specific questions with code examples
 - Be patient and respectful when requesting help
 
-### Recognition
-Contributors are recognized in:
-- **CONTRIBUTORS.md**: All contributors listed
-- **Release Notes**: Major contributions highlighted
-- **Academic Papers**: Significant contributors may be co-authors
+Contributors are listed in CONTRIBUTORS.md and release notes.
 
 ## Release Process
 

@@ -1,8 +1,7 @@
 """
-Physical and material constants for micromagnetic simulations.
+Physical constants and material properties for micromagnetism.
 
-This module contains fundamental physical constants and material parameters
-commonly used in computational magnetism and nanomagnetic logic devices.
+SI units throughout. Material parameters from literature.
 
 Author: Dr. Meshal Alawein
 Email: meshal@berkeley.edu
@@ -12,7 +11,7 @@ License: MIT
 import numpy as np
 from typing import Dict, Any
 
-# Fundamental physical constants (SI units)
+# Physical constants (SI units)
 PHYSICAL_CONSTANTS: Dict[str, float] = {
     # Universal constants
     "mu_0": 4 * np.pi * 1e-7,           # Vacuum permeability (H/m)
@@ -33,7 +32,7 @@ PHYSICAL_CONSTANTS: Dict[str, float] = {
     "alpha_fs": 7.2973525693e-3,        # Fine structure constant
 }
 
-# Material constants for common magnetic materials
+# Material properties
 MATERIAL_CONSTANTS: Dict[str, Dict[str, Any]] = {
     "permalloy_ni80fe20": {
         "Ms": 860e3,                     # Saturation magnetization (A/m)
@@ -244,17 +243,17 @@ PARAMETER_RANGES: Dict[str, Dict[str, float]] = {
 
 def get_material_parameter(material: str, parameter: str) -> float:
     """
-    Get a specific parameter for a material.
+    Get material parameter value.
     
     Args:
         material: Material name (e.g., 'permalloy_ni80fe20')
         parameter: Parameter name (e.g., 'Ms', 'A_ex')
     
     Returns:
-        Parameter value
+        Parameter value in SI units
         
     Raises:
-        KeyError: If material or parameter not found
+        KeyError: Unknown material or parameter
     """
     if material not in MATERIAL_CONSTANTS:
         available = list(MATERIAL_CONSTANTS.keys())
@@ -272,13 +271,13 @@ def list_materials() -> list:
 
 def get_material_info(material: str) -> Dict[str, Any]:
     """
-    Get complete information for a material.
+    Get all parameters for a material.
     
     Args:
         material: Material name
         
     Returns:
-        Dictionary with all material parameters
+        Dict with all material parameters
     """
     if material not in MATERIAL_CONSTANTS:
         available = list(MATERIAL_CONSTANTS.keys())
