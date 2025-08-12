@@ -1,6 +1,6 @@
 # MagLogic: Nanomagnetic Logic Simulation Suite
 # Python dependencies for computational magnetism analysis
-# Author: Dr. Meshal Alawein <meshal@berkeley.edu>
+# Author: Meshal Alawein <meshal@berkeley.edu>
 # Updated: January 2025
 
 # Core scientific computing

@@ -90,7 +90,7 @@ print(f"Execution environment configured")
 
 ---
 
-**Author**: Dr. Meshal Alawein  
+**Author**: Meshal Alawein  
 **Institution**: University of California, Berkeley  
 **Interactive Book Version**: 2025
 

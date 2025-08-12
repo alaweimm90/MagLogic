@@ -6,7 +6,7 @@ This script demonstrates how to run a basic single triangle simulation
 using the MagLogic framework. It serves as a minimal working example
 for new users.
 
-Author: Dr. Meshal Alawein
+Author: Meshal Alawein
 Email: meshal@berkeley.edu
 License: MIT
 """

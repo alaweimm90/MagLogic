@@ -4,7 +4,7 @@ File parsers for MagLogic package.
 This module provides parsers for various micromagnetic simulation output formats
 including OOMMF OVF/ODT files and MuMax3 output files.
 
-Author: Dr. Meshal Alawein
+Author: Meshal Alawein
 Email: meshal@berkeley.edu
 """
 

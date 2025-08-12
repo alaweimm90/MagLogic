@@ -1,11 +1,11 @@
 # OOMMF with TCL/Tk Support for MagLogic
 # Comprehensive OOMMF simulation environment with GUI support
-# Author: Dr. Meshal Alawein <meshal@berkeley.edu>
+# Author: Meshal Alawein <meshal@berkeley.edu>
 # Based on Ubuntu 20.04 LTS with OOMMF 2.0
 
 FROM ubuntu:20.04
 
-LABEL maintainer="Dr. Meshal Alawein <meshal@berkeley.edu>"
+LABEL maintainer="Meshal Alawein <meshal@berkeley.edu>"
 LABEL description="OOMMF micromagnetic simulation environment for MagLogic"
 LABEL version="2.0.0"
 LABEL org.opencontainers.image.source="https://github.com/alaweimm90/MagLogic" 
@@ -160,14 +160,14 @@ RUN cat > /usr/local/bin/start-oommf.sh << 'EOF'
 #!/bin/bash
 
 # MagLogic OOMMF Container Startup Script
-# Author: Dr. Meshal Alawein <meshal@berkeley.edu>
+# Author: Meshal Alawein <meshal@berkeley.edu>
 
 set -e
 
 echo "=================================================="
 echo "MagLogic OOMMF Simulation Environment"
 echo "=================================================="
-echo "Author: Dr. Meshal Alawein"
+echo "Author: Meshal Alawein"
 echo "Institution: UC Berkeley"
 echo "Container Version: 2.0.0"
 echo "=================================================="

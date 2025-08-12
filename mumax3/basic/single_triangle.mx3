@@ -1,6 +1,6 @@
 // Single Triangle Simulation - MuMax3 Implementation
 // Basic study of equilateral permalloy triangle
-// Author: Dr. Meshal Alawein <meshal@berkeley.edu>
+// Author: Meshal Alawein <meshal@berkeley.edu>
 // Based on: M. Alawein et al., IEEE Mag. Lett. 2019
 
 // Simulation parameters (can be overridden)

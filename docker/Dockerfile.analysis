@@ -7,7 +7,7 @@
 FROM python:3.11-slim-bullseye
 
 # Metadata
-LABEL maintainer="Dr. Meshal Alawein <meshal@berkeley.edu>"
+LABEL maintainer="Meshal Alawein <meshal@berkeley.edu>"
 LABEL description="Python analysis environment for MagLogic nanomagnetic simulations"
 LABEL version="1.0.0"
 LABEL repository="https://github.com/alaweimm90/MagLogic"
@@ -120,7 +120,7 @@ set -e
 
 echo "=== MagLogic Analysis Suite ==="
 echo "UC Berkeley Nanomagnetic Logic Research"
-echo "Dr. Meshal Alawein"
+echo "Meshal Alawein"
 echo ""
 
 # Function to show usage
@@ -386,7 +386,7 @@ RUN cat > /workspace/notebooks/MagLogic_Analysis_Tutorial.ipynb << 'EOF'
     "# MagLogic Analysis Tutorial\n",
     "\n",
     "**Nanomagnetic Logic Simulation and Analysis**  \n",
-    "**UC Berkeley - Dr. Meshal Alawein**\n",
+    "**UC Berkeley - Meshal Alawein**\n",
     "\n",
     "This tutorial demonstrates the complete workflow for analyzing micromagnetic simulation results using MagLogic."
    ]

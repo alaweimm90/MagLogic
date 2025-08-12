@@ -4,7 +4,7 @@ MuMax3 file parser for output formats.
 This module provides parsing capabilities for MuMax3 simulation output files,
 including table files and OVF files with MuMax3-specific extensions.
 
-Author: Dr. Meshal Alawein
+Author: Meshal Alawein
 Email: meshal@berkeley.edu
 License: MIT
 """

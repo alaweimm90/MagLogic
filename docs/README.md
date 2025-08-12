@@ -251,4 +251,4 @@ This documentation is licensed under the same MIT License as the MagLogic softwa
 
 **MagLogic Documentation**  
 UC Berkeley Nanomagnetic Logic Research  
-Dr. Meshal Alawein
+Meshal Alawein

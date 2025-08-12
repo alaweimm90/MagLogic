@@ -3,7 +3,7 @@ Analysis tools for magnetization data from OOMMF/MuMax3 simulations.
 
 Includes domain detection, energy calculations, and topological analysis.
 
-Author: Dr. Meshal Alawein
+Author: Meshal Alawein
 Email: meshal@berkeley.edu
 License: MIT
 """

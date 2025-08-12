@@ -4,7 +4,7 @@ Input validation utilities for micromagnetic simulations.
 This module provides comprehensive validation functions for simulation
 parameters, ensuring physical consistency and numerical stability.
 
-Author: Dr. Meshal Alawein
+Author: Meshal Alawein
 Email: meshal@berkeley.edu
 License: MIT
 """

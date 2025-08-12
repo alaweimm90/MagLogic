@@ -14,9 +14,9 @@ Python tools for simulating nanomagnetic logic devices. Supports OOMMF and MuMax
 - Magnetization pattern analysis
 - Cross-platform Docker support
 
-**Author**: Dr. Meshal Alawein (meshal@berkeley.edu)
+**Author**: Meshal Alawein (meshal@berkeley.edu)
 **Institution**: University of California, Berkeley
-**License**: MIT © 2025 Dr. Meshal Alawein — All rights reserved
+**License**: MIT © 2025 Meshal Alawein — All rights reserved
 
 ---
 
@@ -134,7 +134,7 @@ If you use MagLogic in your research, please cite:
 ```bibtex
 @article{alawein2019multistate,
   title={Multistate nanomagnetic logic using equilateral permalloy triangles},
-  author={Alawein, Dr. Meshal and others},
+  author={Alawein, Meshal and others},
   journal={IEEE Magnetics Letters},
   volume={10},
   pages={1--5},
@@ -144,7 +144,7 @@ If you use MagLogic in your research, please cite:
 
 @software{alawein2025maglogic,
   title={MagLogic: Nanomagnetic Logic Simulation Suite},
-  author={Alawein, Dr. Meshal},
+  author={Alawein, Meshal},
   year={2025},
   version={1.0.0},
   url={https://github.com/alaweimm90/MagLogic},
@@ -158,12 +158,12 @@ If you use MagLogic in your research, please cite:
 
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
 
-**Copyright © 2025 Dr. Meshal Alawein — All rights reserved.**
+**Copyright © 2025 Meshal Alawein — All rights reserved.**
 
 ## Connect & Collaborate
 
 ## Contact
 
-**Dr. Meshal Alawein**  
+**Meshal Alawein**  
 University of California, Berkeley  
 meshal@berkeley.edu

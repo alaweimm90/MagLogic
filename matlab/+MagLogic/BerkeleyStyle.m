@@ -3,7 +3,7 @@ classdef BerkeleyStyle < handle
     %   Comprehensive styling class for professional scientific visualizations
     %   following UC Berkeley's official visual identity guidelines.
     %   
-    %   Author: Dr. Meshal Alawein
+    %   Author: Meshal Alawein
     %   Email: meshal@berkeley.edu
     %   Institution: University of California, Berkeley
     %   

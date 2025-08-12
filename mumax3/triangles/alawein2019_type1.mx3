@@ -1,6 +1,6 @@
 // Type-I Reconfigurable NAND/NOR Gate - MuMax3 Implementation
 // Based on: M. Alawein et al., IEEE Mag. Lett. 2019
-// Author: Dr. Meshal Alawein <meshal@berkeley.edu>
+// Author: Meshal Alawein <meshal@berkeley.edu>
 
 // Simulation parameters
 clock_angle := 60.0         // Clock field angle (degrees: +60° = NAND, -60° = NOR)

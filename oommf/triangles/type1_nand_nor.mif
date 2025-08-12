@@ -1,7 +1,7 @@
 # MIF 2.1
 # Type-I Reconfigurable NAND/NOR Gate
 # Based on: M. Alawein et al., IEEE Mag. Lett. 2019
-# Author: Dr. Meshal Alawein <meshal@berkeley.edu>
+# Author: Meshal Alawein <meshal@berkeley.edu>
 
 set PI [expr 4*atan(1.0)]
 set MU0 [expr 4*$PI*1e-7]

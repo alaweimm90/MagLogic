@@ -4,7 +4,7 @@ Base parser for OOMMF/MuMax3 simulation files.
 Defines common interface for parsing OVF files and tabulated data
 from different micromagnetic simulators.
 
-Author: Dr. Meshal Alawein
+Author: Meshal Alawein
 Email: meshal@berkeley.edu
 License: MIT
 """

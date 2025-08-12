@@ -4,7 +4,7 @@ Visualization tools for MagLogic package.
 This module provides comprehensive plotting and visualization capabilities
 for micromagnetic simulation data, with UC Berkeley-themed styling.
 
-Author: Dr. Meshal Alawein
+Author: Meshal Alawein
 Email: meshal@berkeley.edu
 """
 

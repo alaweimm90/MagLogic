@@ -4,7 +4,7 @@ OOMMF simulation runner for MagLogic.
 This module provides a Python interface for running OOMMF simulations,
 managing simulation parameters, and collecting results.
 
-Author: Dr. Meshal Alawein
+Author: Meshal Alawein
 Email: meshal@berkeley.edu
 License: MIT
 """

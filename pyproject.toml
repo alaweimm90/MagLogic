@@ -9,10 +9,10 @@ description = "Nanomagnetic Logic Simulation Suite for Computational Magnetism"
 readme = "README.md"
 license = {file = "LICENSE"}
 authors = [
-    {name = "Dr. Meshal Alawein", email = "meshal@berkeley.edu"},
+    {name = "Meshal Alawein", email = "meshal@berkeley.edu"},
 ]
 maintainers = [
-    {name = "Dr. Meshal Alawein", email = "meshal@berkeley.edu"},
+    {name = "Meshal Alawein", email = "meshal@berkeley.edu"},
 ]
 classifiers = [
     "Development Status :: 4 - Beta",

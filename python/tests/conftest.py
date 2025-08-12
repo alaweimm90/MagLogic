@@ -4,7 +4,7 @@ Pytest configuration and shared fixtures for MagLogic tests.
 This module provides common fixtures and configuration for all test modules,
 ensuring consistent test environments and reducing code duplication.
 
-Author: Dr. Meshal Alawein
+Author: Meshal Alawein
 Email: meshal@berkeley.edu
 License: MIT
 """

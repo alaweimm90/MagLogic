@@ -46,6 +46,6 @@ nav:
 - [Research Papers](research.md)
 
 !!! note "Author Information"
-    **Dr. Meshal Alawein**  
+    **Meshal Alawein**  
     University of California, Berkeley  
     📧 [meshal@berkeley.edu](mailto:meshal@berkeley.edu)

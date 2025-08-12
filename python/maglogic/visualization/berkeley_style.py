@@ -5,7 +5,7 @@ This module provides the official UC Berkeley visual identity for
 scientific plots and visualizations, ensuring consistency across
 all MagLogic publications and presentations.
 
-Author: Dr. Meshal Alawein
+Author: Meshal Alawein
 Email: meshal@berkeley.edu
 License: MIT
 """

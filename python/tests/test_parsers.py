@@ -4,7 +4,7 @@ Tests for MagLogic parsers.
 This module contains comprehensive tests for OOMMF and MuMax3 file parsers,
 ensuring robust handling of various file formats and edge cases.
 
-Author: Dr. Meshal Alawein
+Author: Meshal Alawein
 Email: meshal@berkeley.edu
 License: MIT
 """

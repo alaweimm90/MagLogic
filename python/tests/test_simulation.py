@@ -3,7 +3,7 @@ Tests for MagLogic simulation module.
 
 This module contains tests for OOMMF simulation runner and parameter management.
 
-Author: Dr. Meshal Alawein
+Author: Meshal Alawein
 Email: meshal@berkeley.edu
 License: MIT
 """

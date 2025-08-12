@@ -5,7 +5,7 @@ Setup script for MagLogic: Nanomagnetic Logic Simulation Suite
 This package provides comprehensive tools for micromagnetic simulation
 analysis, focusing on nanomagnetic logic devices and cellular automata.
 
-Author: Dr. Meshal Alawein
+Author: Meshal Alawein
 Email: meshal@berkeley.edu
 Institution: University of California, Berkeley
 License: MIT
@@ -103,9 +103,9 @@ setup(
     long_description_content_type='text/markdown',
     
     # Author and contact information
-    author='Dr. Meshal Alawein',
+    author='Meshal Alawein',
     author_email='meshal@berkeley.edu',
-    maintainer='Dr. Meshal Alawein',
+    maintainer='Meshal Alawein',
     maintainer_email='meshal@berkeley.edu',
     
     # URLs and project information

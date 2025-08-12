@@ -4,7 +4,7 @@ Tests for MagLogic magnetization analysis module.
 This module contains comprehensive tests for magnetization analysis functionality,
 including domain detection, energy calculations, and topological analysis.
 
-Author: Dr. Meshal Alawein
+Author: Meshal Alawein
 Email: meshal@berkeley.edu
 License: MIT
 """

@@ -4,7 +4,7 @@ Unit conversion utilities for micromagnetic simulations.
 This module provides comprehensive unit conversion functionality for
 physical quantities commonly used in computational magnetism.
 
-Author: Dr. Meshal Alawein
+Author: Meshal Alawein
 Email: meshal@berkeley.edu
 License: MIT
 """

@@ -4,7 +4,7 @@ OOMMF file parser for OVF and ODT formats.
 This module provides comprehensive parsing capabilities for OOMMF simulation
 output files, including vector field files (OVF) and data table files (ODT).
 
-Author: Dr. Meshal Alawein
+Author: Meshal Alawein
 Email: meshal@berkeley.edu
 License: MIT
 """

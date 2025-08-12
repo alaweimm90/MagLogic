@@ -1,6 +1,6 @@
 # MagLogic Docker Compose Configuration
 # Complete simulation environment with OOMMF, MuMax3, and analysis tools
-# Author: Dr. Meshal Alawein <meshal@berkeley.edu>
+# Author: Meshal Alawein <meshal@berkeley.edu>
 
 version: '3.8'
 

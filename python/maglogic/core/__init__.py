@@ -4,7 +4,7 @@ Core functionality for MagLogic package.
 This module provides fundamental constants, units, and validation functions
 used throughout the MagLogic suite for computational magnetism.
 
-Author: Dr. Meshal Alawein
+Author: Meshal Alawein
 Email: meshal@berkeley.edu
 """
 

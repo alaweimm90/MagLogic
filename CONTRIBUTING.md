@@ -402,4 +402,4 @@ Thank you for contributing to MagLogic! Your efforts help advance the field of n
 
 **MagLogic Development Team**  
 UC Berkeley Nanomagnetic Logic Research  
-Dr. Meshal Alawein
+Meshal Alawein

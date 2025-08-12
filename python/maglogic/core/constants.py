@@ -3,7 +3,7 @@ Physical constants and material properties for micromagnetism.
 
 SI units throughout. Material parameters from literature.
 
-Author: Dr. Meshal Alawein
+Author: Meshal Alawein
 Email: meshal@berkeley.edu
 License: MIT
 """

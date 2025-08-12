@@ -2,7 +2,7 @@ classdef OOMMFParser < handle
     %OOMMFPARSER Parse OOMMF simulation output files
     %   Comprehensive parser for OOMMF OVF and ODT files with Berkeley styling
     %   
-    %   Author: Dr. Meshal Alawein
+    %   Author: Meshal Alawein
     %   Email: meshal@berkeley.edu
     %   Institution: University of California, Berkeley
     %   

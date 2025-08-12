@@ -10,7 +10,7 @@ device simulation and analysis. This package provides tools for:
 - Machine learning-based state classification
 - High-performance computing integration
 
-Author: Dr. Meshal Alawein
+Author: Meshal Alawein
 Email: meshal@berkeley.edu
 Institution: University of California, Berkeley
 License: MIT
@@ -24,7 +24,7 @@ Example Usage:
 
 # Version information
 __version__ = "1.0.0"
-__author__ = "Dr. Meshal Alawein"
+__author__ = "Meshal Alawein"
 __email__ = "meshal@berkeley.edu"
 __license__ = "MIT"
 __copyright__ = "Copyright 2025, University of California, Berkeley"

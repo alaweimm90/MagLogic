@@ -7,7 +7,7 @@
 FROM python:3.11-slim-bullseye
 
 # Metadata
-LABEL maintainer="Dr. Meshal Alawein <meshal@berkeley.edu>"
+LABEL maintainer="Meshal Alawein <meshal@berkeley.edu>"
 LABEL description="Documentation environment for MagLogic project"
 LABEL version="1.0.0"
 LABEL repository="https://github.com/alaweimm90/MagLogic"
@@ -82,7 +82,7 @@ RUN cat > /workspace/docs/conf.py << 'EOF'
 Configuration file for MagLogic documentation.
 
 UC Berkeley Nanomagnetic Logic Research
-Dr. Meshal Alawein
+Meshal Alawein
 """
 
 import os
@@ -94,8 +94,8 @@ sys.path.insert(0, os.path.abspath('../python'))
 
 # Project information
 project = 'MagLogic'
-copyright = '2025, Dr. Meshal Alawein, UC Berkeley'
-author = 'Dr. Meshal Alawein'
+copyright = '2025, Meshal Alawein, UC Berkeley'
+author = 'Meshal Alawein'
 version = '1.0.0'
 release = '1.0.0'
 
@@ -217,7 +217,7 @@ MagLogic: Nanomagnetic Logic Simulation Suite
 =============================================
 
 **UC Berkeley Nanomagnetic Logic Research**  
-**Dr. Meshal Alawein**
+**Meshal Alawein**
 
 .. image:: _static/berkeley_logo.png
    :width: 200px
